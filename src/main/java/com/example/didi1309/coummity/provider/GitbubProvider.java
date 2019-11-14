@@ -39,6 +39,7 @@ public class GitbubProvider {
             Response response = client.newCall(request).execute();
             String string = response.body().string();
             GithubUser githubUser = JSON.parseObject(string, GithubUser.class);
+            System.out.println("");
             return  githubUser;
         } catch (IOException e) {
            return null;
