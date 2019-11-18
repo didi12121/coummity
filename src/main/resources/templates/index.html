@@ -42,7 +42,7 @@
                 <li class="dropdown" th:if="${session.User}">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" th:text="${session.User.getName()}"><span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><img th:src="${session.User.getAvatar_url()}" style="width: 50%;margin: 0 auto;"></li>
+                       <!-- <li><img th:src="${session.User.getAvatar_url()}" style="width: 50%;margin: 0 auto;"></li>-->
                         <li><a href="#">消息中心</a></li>
                         <li><a href="#">个人资料</a></li>
                         <li><a href="#">退出登录</a></li>
